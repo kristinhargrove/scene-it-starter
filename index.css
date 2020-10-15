@@ -14,3 +14,19 @@ body {
 	margin-top: 20px;
 }
 
+.movie-title {
+	padding: 5px;
+	display: inline-block;
+}
+
+.year {
+	font-size: 1rem;
+	float: right;
+	background-color: darkblue;
+	color: white;
+	padding: 3px;
+}
+
+.card-body {
+	background-color: white;
+}
