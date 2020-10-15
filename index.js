@@ -18,5 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		return finalHTMLArray.join('');
 	} 
 
-	document.getElementById('movie-cards').innerHTML = renderMovies(movieData);
+	document.getElementById('search-form').addEventListener('submit', function(e){
+		e.preventDefault();
+		document.getElementById('movie-cards').innerHTML = renderMovies(movieData);
+	})
 });
