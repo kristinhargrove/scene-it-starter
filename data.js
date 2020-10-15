@@ -78,5 +78,21 @@ var movieData = [
 		Type: "movie",
 		Poster:
 			"https://ia.media-imdb.com/images/M/MV5BMTcxNDE1OTgyOF5BMl5BanBnXkFtZTcwMTEyMzMxOQ@@._V1_SX300.jpg"
-	}
+	},
+	{
+		Title: "Little Miss Sunshie",
+		Year: "2006",
+		imdbID: "tt0449059",
+		Type: "movie",
+		Poster:
+			"https://m.media-amazon.com/images/M/MV5BMTgzNTgzODU0NV5BMl5BanBnXkFtZTcwMjEyMjMzMQ@@._V1_SY1000_CR0,0,677,1000_AL_.jpg"
+	},
+	{
+		Title: "Little Miss Sunshie",
+		Year: "2006",
+		imdbID: "tt0449059",
+		Type: "movie",
+		Poster:
+			"https://m.media-amazon.com/images/M/MV5BMTgzNTgzODU0NV5BMl5BanBnXkFtZTcwMjEyMjMzMQ@@._V1_SY1000_CR0,0,677,1000_AL_.jpg"
+	},
 ];
