@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="card-img-bottom">
 						<h5 class="card-title movie-title">${currentMovie.Title}</h5>
 						<span class="year">${currentMovie.Year}</span>
-						<button type="button" class="btn btn-primary render-button mt-1">Add</button>
+						<div><button type="button" class="btn btn-primary render-button mt-1">Add</button></div>
 					</div>
 					
 				</div>	

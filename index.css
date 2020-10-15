@@ -15,18 +15,20 @@ body {
 }
 
 .movie-title {
-	padding: 5px;
 	display: inline-block;
+	padding: 5px;
 }
 
 .year {
-	font-size: 1rem;
+	padding: 5px;
 	float: right;
 	background-color: darkblue;
 	color: white;
-	padding: 3px;
 }
 
-.card-body {
-	background-color: white;
+.card-img-bottom {
+	padding: 10px 20px;
 }
+
+
+
