@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 	let renderMovies = (movieArray) => {
 
+		function saveToWatchlist(imdbID) {
+			return movieData.imdbID;
+		}
+
 		let finalHTMLArray = movieArray.map(function(currentMovie) {
 			return `
 				<div class="movie card">
@@ -8,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					<div class="card-img-bottom">
 						<h5 class="card-title movie-title">${currentMovie.Title}</h5>
 						<span class="year">${currentMovie.Year}</span>
-						<div><button type="button" class="btn btn-primary render-button mt-1">Add</button></div>
+						<div><button onclick="saveToWatchlist(${currentMovie.imdbID})type="button" class="btn btn-primary render-button mt-1">Add</button></div>
 					</div>
 					
 				</div>	
