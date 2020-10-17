@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var watchlistJSON = localStorage.getItem('watchlist');
-	var watchlist = JSON.parse(watchlistJSON);
+	var watchlist = JSON.parse(watchlistJSON); //parses JSON into Javascript 
 
     let renderMovies = (movieArray) => {
         let finalHTMLArray = movieArray.map(function(currentMovie) {

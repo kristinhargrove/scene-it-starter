@@ -35,9 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		return finalHTMLArray.join('');
 	} 
+})
 
-	document.getElementById('search-form').addEventListener('submit', function(e){
-		e.preventDefault();
-		document.getElementById('movie-cards').innerHTML = renderMovies(movieData);
-	})
-});
+document.getElementById('search-form').addEventListener('submit', function(e){
+	e.preventDefault();
+	var searchString = document.getElementById('search-bar').value;
+	var urlEncodedSearchString = encodeURIComponent(searchString);
+	axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=b2969013&s=' + urlEncodedSearchString)
+		.then(function (response) {
+			console.log(response.data);
+		})
+		.then(function (data){
+			var movieHTML = renderMovies(response.data.Search);
+			moviesContainer.innerHTML = movieHTML;
+		})
+	//document.getElementById('movie-cards').innerHTML = renderMovies(movieData);
+})
